@@ -1,16 +1,74 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.list-group-naked .list-group-item {
+  background-color: transparent;
+  border: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.list-group-naked .list-group-item-action:focus,
+.list-group-naked .list-group-item-action:hover {
+  background-color: rgba(18, 102, 241, 0.1);
+  color: #1266f1;
+  border-radius: 10rem;
+}
+.list-group-naked-dark .list-group-item-action:focus,
+.list-group-naked-dark .list-group-item-action:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #424242;
 }
 
-* {
-  box-sizing: border-box;
+.list-group-naked .list-group-item.active {
+  color: #1266f1;
+}
+
+.form-control.form-status:focus {
+  box-shadow: none;
+}
+
+.input-group-text {
+  border: 0;
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-top: 0.125rem solid;
+  border-color: #1266f1;
+}
+
+.list-group-flush {
+  border-radius: 1rem;
+}
+.list-group-flush .list-group-item {
+  background-color: #f5f8fa;
+}
+.list-group-flush .list-group-item-action:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.feed {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.card-img-profile {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-top: -95px;
+  margin-bottom: 10px;
+  border: 5px solid #e6e5e1;
+}
+
+.border-bottom-active
+{
+  border-bottom: 3px solid #1DA1F2 !important; /* #1fd19b */
+  color: #1DA1F2 !important;
 }

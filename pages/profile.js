@@ -1,50 +1,51 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
 
-export default function Feed() {
+export default function Profile() {
+  const router = useRouter()
   return (
     <div className="col-xl-5 border border-left border-right px-0 feed" style={{ height: "100vh", overflowY: "scroll" }}>
       <div className="p-3 border-bottom">
         <h4 className="d-flex align-items-center mb-0">
-          Home <i className="far fa-xs fa-star ms-auto text-primary" />
+          Profile
         </h4>
       </div>
       <div>
-        <div className="card shadow-0">
-          <div className="card-body border-bottom pb-2">
-            <div className="d-flex">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" className="rounded-circle" height={50} alt="" loading="lazy" />
-              <div className="d-flex align-items-center w-100 ps-3">
-                <div className="w-100">
-                  <input type="text" id="form143" className="form-control form-status border-0 py-1 px-0" placeholder="What's happening" />
-                </div>
+
+      <div className="card white-card" id="navbar-card" style={{width: '100%', margin: '0px auto'}}>
+        <i className="fas fa-redo" alt="Click on icon to refresh background image" style={{zIndex: 5, position: 'absolute', right: '0px', padding: '10px', textShadow: 'rgb(0, 0, 0) 0px 0px 3px', color: 'white'}} />
+        <div className="card-img-top" id="background_img" style={{background: 'url("https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80") 0% 0% / cover', height: '200px'}} />
+        <div className="card-body" style={{ padding: "1rem 1rem 0px 1rem" }}>
+           <img alt="" className="card-img-profile" src="https://i.kym-cdn.com/entries/icons/original/000/026/152/gigachad.jpg" style={{height: '120px', width: '120px'}} />
+           <h3 className="card-text mb-0" style={{fontFamily: '"Titillium Web"', color: 'rgb(28, 30, 32)'}}>Neil Chad</h3>
+           <p className="card-text" style={{fontFamily: '"Titillium Web"', color: 'rgb(28, 30, 32)'}}>@username</p>
+           <p className="card-text mb-0" style={{fontFamily: '"Titillium Web"', color: 'black'}}>Bio bio bio bio bio </p>
+           <span style={{color: 'rgb(110, 118, 125)'}}><i className="fas fa-map-marker-alt" /> Earth </span>
+           <br/>
+           <br/>
+              <div className="btn-group" style={{width: '100%'}}>
+                  <a className={router.pathname === "/profile" ? "btn border-bottom-active" : "btn btn-navbar white-text" } href="/" style={{ paddingBottom: "15px" }}>
+                    <span className="d-lg-none" style={{fontSize: '10px'}}>Tweets</span>
+                    <span className="d-none d-lg-block">Tweets</span>
+                  </a>
+                  <a className="btn btn-navbar white-text" href="/" style={{ paddingBottom: "15px" }}>
+                    <span className="d-lg-none" style={{fontSize: '10px'}}>Tweets & replies </span>
+                    <span className="d-none d-lg-block">Tweets & replies</span>
+                  </a>
+                  <a className="btn btn-navbar white-text" href="/" style={{ paddingBottom: "15px" }}>
+                    <span className="d-lg-none" style={{fontSize: '10px'}}>Media</span>
+                    <span className="d-none d-lg-block">Media</span>
+                  </a>
+                  <a className="btn btn-navbar white-text" href="/" style={{ paddingBottom: "15px" }}>
+                    <span className="d-lg-none" style={{fontSize: '10px'}}>Likes</span>
+                    <span className="d-none d-lg-block">Likes</span>
+                  </a>
               </div>
-            </div>
-            <div className="d-flex justify-content-between">
-              <ul className="list-unstyled d-flex flex-row ps-3 pt-3" style={{marginLeft: '50px'}}>
-                <li>
-                  <a href><i className="far fa-image pe-2" /></a>
-                </li>
-                <li>
-                  <a href><i className="fas fa-photo-video px-2" /></a>
-                </li>
-                <li>
-                  <a href><i className="fas fa-chart-bar px-2" /></a>
-                </li>
-                <li>
-                  <a href><i className="far fa-smile px-2" /></a>
-                </li>
-                <li>
-                  <a href><i className="far fa-calendar-check px-2" /></a>
-                </li>
-              </ul>
-              <div className="d-flex align-items-center">
-                <button type="button" className="btn btn-primary btn-rounded" style={{ borderRadius: "20px"}}>Tweet</button>
-              </div>
-            </div>
-          </div>
-        </div>
+  </div>
+
+
+      </div>
         <div>
           <div className="d-flex p-3 border-bottom">
             <img src="https://mdbootstrap.com/img/Photos/Avatars/img (29).jpg" className="rounded-circle" height={50} alt="" loading="lazy" />
@@ -250,6 +251,5 @@ export default function Feed() {
         </div>
       </div>
     </div>
-
   )
 }

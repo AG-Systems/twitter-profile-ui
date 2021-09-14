@@ -9,3 +9,5 @@
 
 
 Made with Next.js, React, Bootstrap 5, Font awesome.
+
+Used https://www.bootstarters.com/ code 

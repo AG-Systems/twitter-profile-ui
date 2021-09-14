@@ -20,25 +20,28 @@ export default function Profile() {
            <img alt="" className="card-img-profile" src="https://i.kym-cdn.com/entries/icons/original/000/026/152/gigachad.jpg" style={{height: '120px', width: '120px'}} />
            <h3 className="card-text mb-0" style={{fontFamily: '"Titillium Web"', color: 'rgb(28, 30, 32)'}}>Neil Chad</h3>
            <p className="card-text" style={{fontFamily: '"Titillium Web"', color: 'rgb(28, 30, 32)'}}>@username</p>
-           <p className="card-text mb-0" style={{fontFamily: '"Titillium Web"', color: 'black'}}>Bio bio bio bio bio </p>
+           <p className="card-text mb-0 mt-0" style={{fontFamily: '"Titillium Web"', color: 'black'}}>Bio bio bio bio bio </p>
            <span style={{color: 'rgb(110, 118, 125)'}}><i className="fas fa-map-marker-alt" /> Earth </span>
-           <br/>
+
+           <p className="card-text mb-0 mt-1" style={{fontFamily: '"Titillium Web"', color: 'rgb(110, 118, 125)'}}>
+            <b>0</b> Following <span style={{ display: "inline-block", width: "2px" }}></span><b> 69.42M</b> Followers
+          </p>
            <br/>
               <div className="btn-group" style={{width: '100%'}}>
                   <a className={router.pathname === "/profile" ? "btn border-bottom-active" : "btn btn-navbar white-text" } href="/" style={{ paddingBottom: "15px" }}>
-                    <span className="d-lg-none" style={{fontSize: '10px'}}>Tweets</span>
+                    <span className="d-lg-none" style={{fontSize: '13px'}}>Tweets</span>
                     <span className="d-none d-lg-block">Tweets</span>
                   </a>
                   <a className="btn btn-navbar white-text" href="/" style={{ paddingBottom: "15px" }}>
-                    <span className="d-lg-none" style={{fontSize: '10px'}}>Tweets & replies </span>
+                    <span className="d-lg-none" style={{fontSize: '13px'}}>Tweets & replies </span>
                     <span className="d-none d-lg-block">Tweets & replies</span>
                   </a>
                   <a className="btn btn-navbar white-text" href="/" style={{ paddingBottom: "15px" }}>
-                    <span className="d-lg-none" style={{fontSize: '10px'}}>Media</span>
+                    <span className="d-lg-none" style={{fontSize: '13px'}}>Media</span>
                     <span className="d-none d-lg-block">Media</span>
                   </a>
                   <a className="btn btn-navbar white-text" href="/" style={{ paddingBottom: "15px" }}>
-                    <span className="d-lg-none" style={{fontSize: '10px'}}>Likes</span>
+                    <span className="d-lg-none" style={{fontSize: '13px'}}>Likes</span>
                     <span className="d-none d-lg-block">Likes</span>
                   </a>
               </div>

@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Feed() {
   return (
-    <div className="col-xl-5 border border-left border-right px-0 feed" style={{ height: "100vh", overflowY: "scroll" }}>
+    <div className="col-md-5 border border-left border-right px-0 feed" style={{ height: "100vh", overflowY: "scroll" }}>
       <div className="p-3 border-bottom">
         <h4 className="d-flex align-items-center mb-0">
           Home <i className="far fa-xs fa-star ms-auto text-primary" />
@@ -24,19 +24,19 @@ export default function Feed() {
             <div className="d-flex justify-content-between">
               <ul className="list-unstyled d-flex flex-row ps-3 pt-3" style={{marginLeft: '50px'}}>
                 <li>
-                  <a href><i className="far fa-image pe-2" /></a>
+                  <a href><i className="far fa-image pe-2" style={{ fontSize: "30px" }} /></a>
                 </li>
                 <li>
-                  <a href><i className="fas fa-photo-video px-2" /></a>
+                  <a href><i className="fas fa-photo-video px-2" style={{ fontSize: "30px" }} /></a>
                 </li>
                 <li>
-                  <a href><i className="fas fa-chart-bar px-2" /></a>
+                  <a href><i className="fas fa-chart-bar px-2" style={{ fontSize: "35px" }} /></a>
                 </li>
                 <li>
-                  <a href><i className="far fa-smile px-2" /></a>
+                  <a href><i className="far fa-smile px-2" style={{ fontSize: "35px" }} /></a>
                 </li>
                 <li>
-                  <a href><i className="far fa-calendar-check px-2" /></a>
+                  <a href><i className="far fa-calendar-check px-2" style={{ fontSize: "35px" }} /></a>
                 </li>
               </ul>
               <div className="d-flex align-items-center">
@@ -56,7 +56,7 @@ export default function Feed() {
                     <span className="small text-muted font-weight-normal"> @mileycyrus</span>
                     <span className="small text-muted font-weight-normal"> • </span>
                     <span className="small text-muted font-weight-normal">2h</span>
-                    <span><i className="fas fa-angle-down float-end" /></span>
+                    <span><i className="fas fa-angle-down float-end" style={{ fontSize: "17px" }} /></span>
                   </h6>
                 </a>
                 <p style={{lineHeight: '1.2'}}>
@@ -67,12 +67,12 @@ export default function Feed() {
                 </p>
                 <ul className="list-unstyled d-flex justify-content-between mb-0 pe-xl-5">
                   <li>
-                    <i className="far fa-comment" />
+                    <i className="far fa-comment" style={{ fontSize: "17px" }} />
                   </li>
-                  <li><i className="fas fa-retweet" /><span className="small ps-2">7</span></li>
-                  <li><i className="far fa-heart" /><span className="small ps-2">35</span></li>
+                  <li><i className="fas fa-retweet" style={{ fontSize: "17px" }} /><span className="small ps-2">7</span></li>
+                  <li><i className="far fa-heart" style={{ fontSize: "17px" }} /><span className="small ps-2">35</span></li>
                   <li>
-                    <i className="far fa-share-square" />
+                    <i className="far fa-share-square" style={{ fontSize: "17px" }} />
                   </li>
                 </ul>
               </div>

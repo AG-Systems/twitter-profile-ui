@@ -5,7 +5,7 @@ import Link from 'next/link';
 function LeftTabs() {
   return (
 
-      <div className="col-xl-3">
+      <div className="col-md-3">
         <div className="list-group list-group-naked rounded-0 mt-1">
           <a href="#" className="list-group-item list-group-item-action d-flex align-items-center py-3">
             <img src="https://www.nicepng.com/png/full/111-1111079_logo-templates-png-download-template-logo-png.png" height={25} alt="" loading="lazy" />

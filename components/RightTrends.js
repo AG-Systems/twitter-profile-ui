@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 function RightTrends() {
   return (
-    <div className="col-xl-4">
+    <div className="col-md-4">
       <div className="mt-2">
         <div className="input-group form-outline mb-3">
           <span className="input-group-text" id="basic-addon1"><i className="fas fa-search" /></span>
